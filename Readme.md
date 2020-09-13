@@ -1,6 +1,6 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Ozomad](https://up.htmlacademy.ru/htmlcss/29/user/1536397).
+* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/29/user/1536397).
 * Наставник: [Евгений Бервяченок](https://htmlacademy.ru/profile/id151813).
 
 ---
