@@ -4,6 +4,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Нёрдс</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<link href="normalize.css" rel="stylesheet">
+	<link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -18,7 +21,7 @@
 				<li><a href="catalog.html">Магазин</a></li>
 				<li><a href="">Контакты</a></li>
 			</ul>
-			<a class="basket-link" href="basket.html">Корзина</a>
+			<a class="basket-link" href="">Корзина</a>
 		</nav>
 	</header>
 	<main class="container">
@@ -30,7 +33,7 @@
 					<h3>Особенности</h3>
 					<p class="big-text">Долго, дорого, скрупулезно</p>
 					<p class="text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-					<button class="button" type="button">узнать больше</button>
+					<button class="button red-button" type="button">узнать больше</button>
 				</section>
 				<img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Телефоны">
 			</div>
@@ -44,7 +47,7 @@
 						<img src="https://via.placeholder.com/100x50" width="100" height="50" alt="Красный квадрат">
 					</a>
 					<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-					<button class="button order-button" type="button">ЗАКАЗАТЬ</button>
+					<button class="button order-button red-button" type="button">ЗАКАЗАТЬ</button>
 				</li>
 				<li  class="products-item">
 					<h3>ПРИЛОЖЕНИЯ</h3>
@@ -52,7 +55,7 @@
 						<img src="https://via.placeholder.com/100x50" width="100" height="50" alt="Зеленый квадрат">
 					</a>
 					<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-					<button class="button order-button" type="button">ЗАКАЗАТЬ</button>
+					<button class="button order-button green-button" type="button">ЗАКАЗАТЬ</button>
 				</li>
 				<li  class="products-item">
 					<h3>ПРЕЗЕНТАЦИИ</h3>
@@ -60,7 +63,7 @@
 						<img src="https://via.placeholder.com/100x50" width="100" height="50" alt="Желтый квадрат">
 					</a>
 					<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-					<button class="button order-button" type="button">ЗАКАЗАТЬ</button>
+					<button class="button order-button yellow-button" type="button">ЗАКАЗАТЬ</button>
 				</li>
 			</ul>
 		</section>
@@ -77,7 +80,7 @@
 				<li class="order-item">
 					<p>Мобильных приложений для iOS и Android</p>
 				</li>
-				<liclass="order-item">
+				<li class="order-item">
 					<p>Слайдшоу и видео для корпоративных презентаций</p>
 				</li>
 			</ul>
@@ -89,15 +92,15 @@
 			<p>с 2004 года Любим точность во всем:</p>
 			<ul class="number-list">
 				<li class="number-item">
-					<p>146%</p>
+					<p class="number">146%</p>
 					<p>Уровень самоотдачи</p>
 				</li>
 				<li class="number-item">
-					<p>100%</p>
+					<p class="number">100%</p>
 					<p>Соблюдение сроков</p>
 				</li>
 				<li class="number-item">
-					<p>50%</p>
+					<p class="number">50%</p>
 					<p>Минимальная предоплата</p>
 				</li>
 			</ul>
@@ -126,12 +129,12 @@
 			<img src="https://via.placeholder.com/1440x416" width="1440" height="416" alt="Карта»">
 				<!--обозначил карту-->
 			<p>
-				<button class="button" type="button">напишите нам</button>
+				<button class="button red-button" type="button">напишите нам</button>
 			</p>
 		</section>
 		<section class="footer-social">
 			<h2>Давайте дружить, это выгодно!</h2>
-			<ul>
+			<ul class="social-list">
 				<li>
 					<a class="social-button" href="#">Вконтакте</a>
 				</li>
