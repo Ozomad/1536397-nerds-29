@@ -76,6 +76,7 @@ img {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+  margin: 0;
 }
 /* Products */
 .products-list, .number-list, .example-list, .social-list{
