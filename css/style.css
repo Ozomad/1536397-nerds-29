@@ -1,6 +1,8 @@
 /*Variables*/
 :root{
   --basic-background:  #888888;
+  --basic-dark-grey:  #666666;
+  --basic-darker-grey:  #444444;
   --basic-grey: #EEEEEE;
   --basic-white:#FFFFFF;
   --basic-black: #000000;
@@ -28,6 +30,15 @@ body {
   background-color: var(--basic-white);
 }
 
+.visually-hidden{
+  /*visibility: hidden;*/
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+/*  background-color: var(--basic-grey); не смог фон сделать серым у заголовка. Или это не заголовок*/
+}
 .page a {
   text-decoration: none;
 }
@@ -40,6 +51,8 @@ img {
 .main-navigation{
   font-size:16px;
   line-height: 30px;
+  font-weight: 500;
+
 }
 .site-navigation{
   list-style: none;
@@ -57,6 +70,12 @@ img {
 .site-navigation a:focus{
   color: var(--basic-black);
   opacity: 30%;
+}
+/*texts*/
+.big-text{
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
 }
 /* Products */
 .products-list, .number-list, .example-list, .social-list{
@@ -78,9 +97,11 @@ img {
   font: inherit;
   font-size: 16px;
   line-height: 18px;
-  align: center;
+  font-weight: 500;
+  text-align: center;
   text-transform: uppercase;
   color: var(--basic-white);
+  border: none;
 }
 .red-button{
   background-color: var(--button-red-active);
@@ -92,11 +113,32 @@ img {
 .yellow-button{
   background-color: var(--button-yellow-active);
 }
-
+.about-us{
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+.about-us-full{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.about-us-list{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
 .number{
   font-size: 45px;
   line-height: 64px;
+  font-weight: 700;
 }
+.number-text{
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
 /* Contacts */
 .contacts-phone {
   color: inherit;
@@ -104,4 +146,27 @@ img {
 .footer-social h2{
   font-size: 36px;
   line-height: 36px;
+  font-weight: 700;
 }
+
+.contacts h2{
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.contacts p{
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-dark-grey)
+}
+.discount{
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: var(--basic-darker-grey)
+}
+
+
+/*catalog.html*/
