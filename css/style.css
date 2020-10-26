@@ -6,6 +6,8 @@
   --basic-grey: #EEEEEE;
   --basic-white:#FFFFFF;
   --basic-black: #000000;
+  --basic-black-filter: #283136;
+
   --nav-red-hover:#FB565A;
   --button-red-active: #FB565A;
   --button-red-hover: #E74246;
@@ -37,7 +39,7 @@ body {
   width: 1px;
   height: 1px;
   margin: -1px;
-/*  background-color: var(--basic-grey); не смог фон сделать серым у заголовка. Или это не заголовок*/
+
 }
 .page a {
   text-decoration: none;
@@ -59,7 +61,9 @@ img {
 }
 /* User navigation */
 .main-navigation a,
-.site-navigation a{
+.site-navigation a,
+.pagination-item a,
+.sort-item a{
   color: var(--basic-black);
 }
 .main-navigation a:hover,
@@ -67,7 +71,8 @@ img {
   color: var(--nav-red-hover);
 }
 .main-navigation a:focus,
-.site-navigation a:focus{
+.site-navigation a:focus,
+.sort-item-no-current{
   color: var(--basic-black);
   opacity: 30%;
 }
@@ -79,7 +84,7 @@ img {
   margin: 0;
 }
 /* Products */
-.products-list, .number-list, .example-list, .social-list{
+.products-list, .number-list, .example-list, .social-list, .template-list, .pagination-list, .sort-list{
   list-style: none;
 }
 .products-item h3{
@@ -113,6 +118,10 @@ img {
 }
 .yellow-button{
   background-color: var(--button-yellow-active);
+}
+.filter-button{
+  color: var(--basic-black);
+  background-color: var(--basic-grey);
 }
 .about-us{
   font-size: 45px;
@@ -150,13 +159,13 @@ img {
   font-weight: 700;
 }
 
-.contacts h2{
+.contacts h2, .catalog-item-title, .filter-name{
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
 }
 
-.contacts p{
+.contacts p, .catalog-item-legend{
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -171,3 +180,25 @@ img {
 
 
 /*catalog.html*/
+.catalog-item-title, .filter-name, .sort-item{
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+.sort-item{
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+
+}
+.pagination-item, .filter-button{
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+.filter-option{
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color:var(--basic-black-filter);
+  list-style: none;
+}
