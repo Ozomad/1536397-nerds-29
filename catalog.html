@@ -5,13 +5,13 @@
     <title>Каталог - студия Нёрдс</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="normalize.css" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <header class="main-header">
       <nav class="main-navigation">
   			<a class="main-header-logo" href="index.html">
-  				<img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Логотип студии «Нёрдс»">
+  				<img src="img/nerds-logo.svg" width="159.87" height="65.02" alt="Логотип студии «Нёрдс»">
   			</a>
   			<ul class="site-navigation">
   				<li><a href="index.html">Студия</a></li>
@@ -19,7 +19,9 @@
   				<li><a href="catalog.html">Магазин</a></li>
   				<li><a href="">Контакты</a></li>
   			</ul>
-  			<a "basket-link" href="basket.html">Корзина</a>
+        <a class="basket-link" href="">
+  					<img src="img/cart-icon.svg" width="15" height="15" alt="">Корзина
+  			</a>
   		</nav>
     </header>
     <main class="page-catalog container">
@@ -37,6 +39,16 @@
               <li class="sort-item"><a href="#">по цене</a></li>
               <li class="sort-item sort-item-no-current"><a href="#">по типу</a></li>
               <li class="sort-item sort-item-no-current"><a href="#">по названию</a></li>
+              <li class="sort-item">
+                <a href="#">
+                  <img src="img/icon-down-dir.svg" width="11" height="10" alt="">
+                </a>
+              </li>
+              <li class="sort-item sort-item-no-current">
+                <a href="#">
+                  <img src="img/icon-up-dir.svg" width="11" height="10" alt="">
+                </a>
+              </li>
             </ul>
           </fieldset>
           <fieldset>
@@ -86,7 +98,8 @@
                   <span class="catalog-item-title">sedona</span>
                   <span class="catalog-item-legend">Информационный сайт для туристов</span>
                 </h3>
-                  <img src="https://via.placeholder.com/359x578" width="359" height="578" alt="Информационный сайт для туристов «Sedona»">
+                  <img src="img/browser-active.svg" width="360" height="40" alt="">
+                  <img src="img/sedona.jpg" width="358" height="578" alt="Информационный сайт для туристов «Sedona»">
                 <p>
                   <button class="button red-button" type="button">9 900 ₽</button>
                 </p>
@@ -97,31 +110,36 @@
           <li class="template-item">
             <a class="template-logo" href="#">
               <h3 class="visually-hidden">Приложение "Pink"</h3>
-                <img src="https://via.placeholder.com/359x578" width="359" height="578" alt="Приложение «Pink»">
+              <img src="img/browser.svg" width="360" height="40" alt="">
+              <img src="img/pink.jpg" width="358" height="578" alt="Приложение «Pink»">
             </a>
           </li>
           <li class="template-item">
             <a class="template-logo" href="#">
               <h3 class="visually-hidden">Барбершоп "Бородинский"</h3>
-                <img src="https://via.placeholder.com/359x578" width="359" height="578" alt="Барбершоп «Бородинский»">
+              <img src="img/browser.svg" width="360" height="40" alt="">
+              <img src="img/barbershop.jpg" width="358" height="578" alt="Барбершоп «Бородинский»">
             </a>
           </li>
           <li class="template-item">
             <a class="template-logo" href="#">
               <h3 class="visually-hidden">Хэнд мейд "Mishka"</h3>
-                <img src="https://via.placeholder.com/359x578" width="359" height="578" alt="Хэнд мейд «Mishka»">
+              <img src="img/browser.svg" width="360" height="40" alt="">
+              <img src="img/hand-made.jpg" width="358" height="578" alt="Хэнд мейд «Mishka»">
             </a>
           </li>
           <li class="template-item">
             <a class="template-logo" href="#">
               <h3 class="visually-hidden">Учебное заведение "Noname"</h3>
-                <img src="https://via.placeholder.com/359x578" width="359" height="578" alt="Учебное заведение «Noname»">
+              <img src="img/browser.svg" width="360" height="40" alt="">
+              <img src="img/study.jpg" width="358" height="578" alt="Учебное заведение «Noname»">
             </a>
           </li>
           <li class="template-item">
             <a class="template-logo" href="#">
               <h3 class="visually-hidden">Крафтовый квас "Кваст"</h3>
-                <img src="https://via.placeholder.com/359x578" width="359" height="578" alt="Крафтовый квас «Кваст»">
+              <img src="img/browser.svg" width="360" height="40" alt="">
+              <img src="img/kvast.jpg" width="358" height="578" alt="Крафтовый квас «Кваст»">
             </a>
           </li>
         </ul>
@@ -146,8 +164,9 @@
   			<h2>NЁRDS DESIGN STUDIO</h2>
   			<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
   			<p>Тел. <a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-  			<img src="https://via.placeholder.com/1440x416" width="1440" height="416" alt="Карта»">
+        <img src="img/map.jpg" width="1440" height="416" alt="Карта»">
   				<!--обозначил карту-->
+  			<img src="img/map-marker.png" width="231" height="190" alt="Метка на карте»">
   			<p>
   				<button class="button red-button" type="button">напишите нам</button>
   			</p>
@@ -155,14 +174,20 @@
   		<section class="footer-social">
   			<h2>Давайте дружить, это выгодно!</h2>
   			<ul class="social-list">
-  				<li>
-  					<a class="social-button" href="#">Вконтакте</a>
+          <li>
+  					<a class="social-button" href="#">
+  						<img src="img/vk-icon.svg" width="81" height="81" alt="Кнопка VK">
+  					</a>
   				</li>
   				<li>
-  					<a class="social-button" href="#">Фейсбук</a>
+  					<a class="social-button" href="#">
+  							<img src="img/fb-icon.svg" width="81" height="81" alt="Кнопка FB">
+  					</a>
   				</li>
   				<li>
-  					<a class="social-button" href="#">Инстаграм</a>
+  					<a class="social-button" href="#">
+  							<img src="img/insta-icon.svg" width="81" height="81" alt="Кнопка Insta">
+  					</a>
   				</li>
   			</ul>
   			<p class="discount">Скидка 10% для друзей из социальных сетей.</p>
