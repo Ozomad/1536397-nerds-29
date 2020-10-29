@@ -51,6 +51,8 @@ body {
 }*/
 /* Main navigation */
 .main-navigation{
+  display: grid;
+  grid-template-columns: 1fr 1fr min-content;
   font-size:16px;
   line-height: 30px;
   font-weight: 500;
@@ -76,6 +78,9 @@ body {
   color: var(--basic-black);
   opacity: 30%;
 }
+.page-body{
+    width:1440px;
+}
 /*texts*/
 .big-text{
   font-size: 55px;
@@ -90,8 +95,9 @@ body {
 
 .products-list{
   display: grid;
-  grid-template-columns: 1FR 1fr 1fr;
+  grid-template-columns: 1fR 1fr 1fr;
 }
+
 .products-item h3{
   font-size: 24px;
   line-height: 30px;
@@ -102,7 +108,10 @@ body {
 .slider, .main-header{
   background-color: var(--basic-grey);
 }
-
+.index-columns{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
 /*Button*/
 .button{
   font: inherit;
@@ -153,6 +162,11 @@ body {
   line-height: 18px;
   font-weight: 400;
 }
+.example-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
 
 /* Contacts */
 .contacts-phone {
@@ -182,7 +196,10 @@ body {
   font-weight: 400;
   color: var(--basic-darker-grey)
 }
-
+.footer-social{
+  display: grid;
+  grid-template-columns: 3fr 6fr 1fr;
+}
 
 /*catalog.html*/
 .catalog-item-title, .filter-name, .sort-item{
