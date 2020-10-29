@@ -13,21 +13,25 @@
 	<header class="main-header">
 		<nav class="main-navigation">
 			<a class="main-header-logo">
+		<div class="main-header-bar">
+				<nav class="main-navigation">
+					<a class="main-header-logo">
 				<!--<img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Логотип студии «Нёрдс»">-->
 				<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии «Нёрдс»">
-			</a>
-			<ul class="site-navigation">
+					</a>
+					<ul class="site-navigation">
 				<li><a href="">Студия</a></li>
 				<li><a href="">Клиенты</a></li>
 				<li><a href="catalog.html">Магазин</a></li>
 				<li><a href="">Контакты</a></li>
 			</ul>
-			<a class="basket-link" href="">
-					<img src="img/cart-icon.svg" width="15" height="15" alt="">Корзина
-			</a>
-		</nav>
+					<a class="basket-link" href="">
+						<img src="img/cart-icon.svg" width="15" height="15" alt="">Корзина
+					</a>
+				</nav>
+		</div>
 	</header>
-	<main class="container">
+	<main >
 		<h1 class="visually-hidden">Студия Нёрдс</h1>
 		<aside class="slider">
 			<h2 class="visually-hidden">Слайдер</h2>
@@ -41,6 +45,7 @@
 				<img src="img/nerds-index-slide1.png" width="760" height="431" alt="Телефоны">
 			</div>
 		</aside>
+		<div class="container">
 		<section class="products">
 			<h2 class="visually-hidden">Виды продукции</h2>
 			<ul class="products-list">
@@ -109,7 +114,7 @@
 				</li>
 			</ul>
 		</section>
-	</div>
+		</div>
 		<section class="example-logo">
 			<h2 class="visually-hidden">Логотипы</h2>
 			<ul class="example-list">
@@ -124,21 +129,28 @@
 					<img src="img/logo-4.png" width="173" height="84" alt="логотип «mishka»"></li>
 			</ul>
 		</section>
+		</div>
 	</main>
 	<footer class="page-footer main-footer">
-		<section class="contacts">
-			<h2>NЁRDS DESIGN STUDIO</h2>
-			<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-			<p>Тел. <a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-			<img src="img/map.jpg" width="1440" height="416" alt="Карта»">
-				<!--обозначил карту-->
+		<section class="contacts contacts-map">
+			<div class="contact-text">
+				<h2>NЁRDS DESIGN STUDIO</h2>
+				<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+				<p>Тел. <a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+				<p>
+					<button class="button red-button" type="button">напишите нам</button>
+				</p>
+			</div>
+			<div class="contact-map">
+				<img src="img/map.jpg" width="1440" height="416" alt="Карта»">
+					<!--обозначил карту-->
+			</div>
+			<div class="contact-marker">
 				<img src="img/map-marker.png" width="231" height="190" alt="Метка на карте»">
-			<p>
-				<button class="button red-button" type="button">напишите нам</button>
-			</p>
+			</div>
 		</section>
-		<section class="footer-social">
-			<h2>Давайте дружить, это выгодно!</h2>
+		<section class="footer-social container">
+			<h2 class="slogan">Давайте дружить, это выгодно!</h2>
 			<ul class="social-list">
 				<li>
 					<a class="social-button" href="#">
@@ -159,6 +171,6 @@
 			<p class="discount">Скидка 10% для друзей из социальных сетей.</p>
 		</section>
 	</footer>
-	</body>
+</body>
 
 	</html>
