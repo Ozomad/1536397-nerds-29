@@ -67,21 +67,15 @@ img {
 .main-header {
   padding: 49px 0 9px;
 }
-.main-header-bar{
-  width:1160px;
-  margin: 0 auto;
-  background-color: var(--basic-grey);
-}
-
 /* Main navigation */
 .main-navigation{
   box-sizing: border-box;
   display: grid;
   grid-template-columns: max-content 1fr min-content;/* 1fr min-content min-content;*/
   grid-template-areas: "logo site-menu basket";
-  max-width:1160px;
+  max-width:1200px;
   margin: 0 auto;
-
+  padding: 0 20px;
   font-size:16px;
   line-height: 30px;
   font-weight: 500;
@@ -143,14 +137,14 @@ img {
 /* Container */
 
 .container {
- /*min-width: 1160px;
+  min-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;*/
+  padding: 0 20px;
 }
 .none-style {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 /*texts*/
 
@@ -179,12 +173,11 @@ img {
 /*Slider*/
 .slider{
   position: relative;
-
-  background-color: var(--basic-gray);
+  background-color: var(--basic-grey);
 }
 .slider-list {
     box-sizing: border-box;
-    max-width: 1160px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0;
   }
@@ -209,13 +202,16 @@ img {
 .slide-1::before {
     content: url("../img/nerds-index-slide1.png");
   }
+.slide-2, .slide-3{
+    display:none;
+  }
 .slide-content{
     position: relative;
     z-index: 1;
     width: 516px;
   }
 
-.slider, .main-header{
+.main-header{
   background-color: var(--basic-grey);
 }
 .slide-title{
@@ -228,8 +224,42 @@ img {
    margin: 25px 0 38px;
 }
 .slide-button {
-    padding: 55px;
-    margin-bottom: 63px;
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 100%;
+  margin: 0;
+  padding: 17px 55px 15px;
+  vertical-align: inherit;
+  margin-bottom: 63px;
+  text-overflow: ellipsis;
+
+  cursor: pointer;
+  border-radius: 3px;
+  overflow: hidden;
+}
+/*controls*/
+.slider-controls{
+  position: absolute;
+  bottom: 96px;
+  left: 50%;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -44px;
+}
+.control-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  padding: 0;
+  margin-right: 17px;
+  background-color: var(--basic-white);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
 }
 .index-columns{
   display: grid;
