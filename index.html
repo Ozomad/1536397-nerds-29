@@ -9,13 +9,14 @@
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page-body">
-	<header class="main-header">
+	<div class="container">
+		<header class="main-header">
 				<nav class="main-navigation">
 					<a class="main-header-logo">
 				<!--<img src="https://via.placeholder.com/150x100" width="150" height="100" alt="Логотип студии «Нёрдс»">-->
 						<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии «Нёрдс»">
 					</a>
-					<ul class="site-navigation">
+					<ul class="site-navigation none-style">
 						<li><a href="">Студия</a></li>
 						<li><a href="">Клиенты</a></li>
 						<li><a href="catalog.html">Магазин</a></li>
@@ -23,12 +24,37 @@
 					</ul>
 					<a class="basket-link" href="">Корзина</a>
 				</nav>
-	</header>
-	<main >
+		</header>
+		<main>
 		<h1 class="visually-hidden">Студия Нёрдс</h1>
-		<aside class="slider">
+		<section class="slider">
 			<h2 class="visually-hidden">Слайдер</h2>
-			<div class="slide">
+				<ul class="slider-list none-style">
+					<li class="slider-item slide-1">
+						<div class="slide-content">
+							<h3 class="slide-title">Долго, дорого, скрупулезно</h3>
+							<p class="slide-text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+							<a class="button red-button slide-button"href="#">узнать больше</a>
+						</div>
+					</li>
+					<li class="slider-item slide-2">
+						<h3 class="slide-title">Любим математику как никто другой</h3>
+						<p class="slide-text">Никакого креатива, только математические формулы <br> для расчета идеальных пропорций</p>
+						<a class="button red-button  slide-button"href="#">узнать больше</a>
+					</li>
+					<li class="slider-item slide-3">
+						<h3 class="slide-title">Только ночь, только хардкор</h3>
+						<p class="slide-text">Работать днем, как все? Мы против этого. <br> Ближе к полуночи работа только начинается.</p>
+						<a class="button red-button slide-button"href="#">узнать больше</a>
+					</li>
+				</ul>
+				<div class="slider-controls">
+					<button type="button" class="control-button">Первый слайд</button>
+					<button type="button">Второй слайд</button>
+					<button type="button">Третий слайд</button>
+				</div>
+
+<!--			<div class="slide">
 				<section class="slide-item">
 					<h3 class="visually-hidden">Особенности</h3>
 					<p class="big-text">Долго, дорого, скрупулезно</p>
@@ -36,9 +62,9 @@
 					<button class="button red-button" type="button">узнать больше</button>
 				</section>
 				<img src="img/nerds-index-slide1.png" width="760" height="431" alt="Телефоны">
-			</div>
-		</aside>
-		<div class="container">
+			</div>-->
+		</section>
+
 		<section class="products">
 			<h2 class="visually-hidden">Виды продукции</h2>
 			<ul class="products-list">
@@ -69,7 +95,7 @@
 			</ul>
 		</section>
 		<div class="index-columns">
-		<section class="about">
+			<section class="about">
 			<h2 class="visually-hidden">О нас</h2>
 			<p  class="about-us">Мы — маленькая, но гордая<br> дизайн-студия из Краснодара.</p>
 			<p class=about-us-full>Исповедуем принципы минимализма и чистоты. Ставим математический расчет <br> превыше креатива. Работаем
@@ -86,8 +112,8 @@
 					<p>Слайдшоу и видео для корпоративных презентаций</p>
 				</li>
 			</ul>
-		</section>
-		<section class="about-us-number">
+			</section>
+			<section class="about-us-number">
 			<h2 class="visually-hidden">О нас в цифрах</h2>
 			<img src="img/nerds-illustration.png" width="360" height="208"
 				alt="Красивый логотип студии «Нёрдс»">
@@ -122,11 +148,10 @@
 					<img src="img/logo-4.png" width="173" height="84" alt="логотип «mishka»"></li>
 			</ul>
 		</section>
-		</div>
-	</main>
-	<footer class="page-footer main-footer">
-		<section class="contacts contacts-map">
-			<div class="contact-text">
+		</main>
+		<footer class="page-footer main-footer">
+			<section class="contacts contacts-map">
+				<div class="contact-text">
 				<h2>NЁRDS DESIGN STUDIO</h2>
 				<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 				<p>Тел. <a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
@@ -134,15 +159,15 @@
 					<button class="button red-button" type="button">напишите нам</button>
 				</p>
 			</div>
-			<div class="contact-map">
+				<div class="contact-map">
 				<img src="img/map.jpg" width="1440" height="416" alt="Карта»">
 					<!--обозначил карту-->
 			</div>
-			<div class="contact-marker">
+				<div class="contact-marker">
 				<img src="img/map-marker.png" width="231" height="190" alt="Метка на карте»">
 			</div>
-		</section>
-		<section class="footer-social container">
+			</section>
+			<section class="footer-social container">
 			<h2 class="slogan">Давайте дружить, это выгодно!</h2>
 			<ul class="social-list">
 				<li>
@@ -162,8 +187,9 @@
 				</li>
 			</ul>
 			<p class="discount">Скидка 10% для друзей из социальных сетей.</p>
-		</section>
-	</footer>
+			</section>
+		</footer>
+	</div>
 </body>
 
 	</html>

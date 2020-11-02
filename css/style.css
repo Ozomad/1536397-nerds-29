@@ -97,9 +97,6 @@ img {
   flex-wrap: wrap;
   justify-content: center;
 
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 .site-navigation li{
     margin-right: 45px;
@@ -146,18 +143,17 @@ img {
 /* Container */
 
 .container {
-  width: 1160px;
+ /*min-width: 1160px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 20px;*/
 }
-
+.none-style {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 /*texts*/
-.big-text{
-  font-size: 55px;
-  line-height: 55px;
-  font-weight: 500;
-  margin: 0;
-}
+
 /* Products */
 .products-list, .number-list, .example-list, .social-list, .template-list, .pagination-list, .sort-list{
   list-style: none;
@@ -178,18 +174,62 @@ img {
   text-transform: uppercase;
 }
 .products-item p{
-margin: 0 10px;
+  margin: 0 10px;
 }
 /*Slider*/
-.slide{
-  width: 1160px;
-  margin: 0 auto;
-  padding: 50px 10px;
-  display: grid;
-  grid-template-columns: min-content 1fr;
+.slider{
+  position: relative;
+
+  background-color: var(--basic-gray);
 }
+.slider-list {
+    box-sizing: border-box;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .slider-item{
+    position: relative;
+
+  /*display: none;*/
+    padding: 10px 20px;
+  }
+.slider-item::before {
+    position: absolute;
+    right: 23px;
+    bottom: 0;
+
+    max-width: 760px;
+    max-height: 431px;
+
+    line-height: 0;
+
+    overflow: hidden;
+  }
+.slide-1::before {
+    content: url("../img/nerds-index-slide1.png");
+  }
+.slide-content{
+    position: relative;
+    z-index: 1;
+    width: 516px;
+  }
+
 .slider, .main-header{
   background-color: var(--basic-grey);
+}
+.slide-title{
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  margin: 45px 0 0;
+}
+.slide-text{
+   margin: 25px 0 38px;
+}
+.slide-button {
+    padding: 55px;
+    margin-bottom: 63px;
 }
 .index-columns{
   display: grid;
