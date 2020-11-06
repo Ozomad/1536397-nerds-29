@@ -47,7 +47,7 @@ body {
 }
 img {
   max-width: 100%;
-  height: auto;
+  /*height: auto;*/
 }
 .page a {
   text-decoration: none;
@@ -137,9 +137,9 @@ img {
 /* Container */
 
 .container {
-  /* min-width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px; */
+  padding: 0 20px;
 }
 .none-style {
   margin: 0;
@@ -223,11 +223,11 @@ img {
     margin: 0 auto;
     padding: 0;
   }
-  .slider-item{
-    position: relative;
+.slider-item{
+  position: relative;
 
   /*display: none;*/
-    padding: 10px 20px;
+  padding: 10px 20px;
   }
 .slider-item::before {
     position: absolute;
@@ -332,21 +332,60 @@ img {
   color: var(--basic-black);
   background-color: var(--basic-grey);
 }
+.about{
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 660px 360px;
+  justify-content: space-between;
+  grid-template-areas:
+    "lines lines"
+    "left right";
+  width: 1200px;
+  margin: 43px auto 0;
+  padding: 0 20px;
+}
+.about::before {
+  content: "";
+
+  display: block;
+  grid-area: lines;
+  width: 100%;
+  height: 2px;
+  margin-bottom: 30px;
+
+  background-color: var(--basic-grey);
+}
+.about-left {
+  grid-area: left;
+}
+.about-right {
+  grid-area: right;
+}
 .about-us{
+  margin: 43px 0 0;
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
 }
 .about-us-full{
+  margin: 32px 0 0;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  color: var(--basic-black-filter);
 }
 .about-us-list{
+  margin: 40px 0 0;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
+  color: var(--basic-black-filter);
+  text-transform: uppercase;
 }
+.order-list{
+  margin: 20px 0 0;
+}
+
 .number{
   font-size: 45px;
   line-height: 64px;
